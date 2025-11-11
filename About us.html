@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>VIBE - About Us</title>
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f6f6f6;
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+    .navbar {
+      background: #574b90;
+      color: #fff;
+      padding: 18px 35px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .navbar .brand-logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    .navbar a.active,
+    .navbar a:hover {
+      color: #f9ca24;
+    }
+
+    .about-container {
+      background: #fff;
+      max-width: 440px;
+      margin: 32px auto;
+      border-radius: 14px;
+      box-shadow: 0 2px 10px rgba(80,60,130,0.06);
+      padding: 1.5rem 1.3rem 1rem 1.3rem;
+    }
+    .about-title {
+      text-align: center;
+      font-size: 1.6rem;
+      color: #574b90;
+      font-weight: 800;
+      margin-bottom: 0.5em;
+    }
+    .about-desc {
+      margin-bottom: 1em;
+      text-align: center;
+      font-size: 1.03em;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      font-size: .98em;
+      margin: 1em auto;
+      background: #fafaff;
+      border-radius: 6px;
+      overflow: hidden;
+      margin-bottom: 1.1em;
+    }
+    caption {
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #574b90;
+    }
+    td, th {
+      padding: 7px 0;
+      text-align: center;
+      border-bottom: 1px solid #eee;
+    }
+    tr:last-child td {border-bottom: none;}
+    .section-title {
+      font-size: 1.05em;
+      color: #f9ca24;
+      margin: 1em 0 0.3em 0;
+      font-weight: bold;
+    }
+    ul, ol {
+      margin: 0.3em 0 1em 1.4em;
+    }
+    .social {
+      text-align: center;
+      margin-top: 1.3em;
+    }
+    .social img {
+      width: 34px; height: 34px; margin: 0 8px; border-radius: 7px; vertical-align: middle;
+      box-shadow: 0 2px 6px rgba(80,60,130,0.06);
+    }
+    @media (max-width: 600px) {
+      .about-container { max-width: 98%; margin: 12px; padding: .9rem .3rem;}
+      .navbar {flex-direction: column; padding: 12px 5px;}
+      .navbar .brand-logo {margin-bottom: 8px; font-size: 1.2rem;}
+      .about-title{font-size:1.2rem;}
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="brand-logo">VIBE</div>
+    <div>
+      <a href="home.html">Home</a>
+      <a href="product.html">Shop</a>
+      <a href="about.html" class="active">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+  <div class="about-container">
+    <div class="about-title">About Us</div>
+    <div class="about-desc">
+      Hello! We are Tareq, Abdulaziz, and Yousuf.<br>
+      <br>
+      Software engineers interested in programming.<br>
+      <br>
+      This is our CIS 201 project.
+    </div>
+    <table>
+      <caption>Our Team</caption>
+      <tr><td>Tareq Almassri</td><td>202311344</td></tr>
+      <tr><td>Abdulaziz Alatiyyah</td><td>202410540</td></tr>
+      <tr><td>Yousuf Gazdar</td><td>202510064</td></tr>
+    </table>
+    <div class="section-title">Certificates</div>
+    <ul>
+      <li>Java Oracle Certification</li>
+      <li>Tech events participant</li>
+      <li>Web & App development</li>
+    </ul>
+    <div class="section-title">Skills</div>
+    <ol>
+      <li>Java</li>
+      <li>C++</li>
+      <li>Python</li>
+    </ol>
+    <div class="section-title" style="text-align:center;">Follow Us</div>
+    <div class="social">
+      <a href="https://www.instagram.com" target="_blank"><img src="Insta.png" alt="Instagram"></a>
+      <a href="https://web.whatsapp.com" target="_blank"><img src="WhatsApp.png" alt="WhatsApp"></a>
+      <a href="https://github.com" target="_blank"><img src="Git.png" alt="GitHub"></a>
+    </div>
+  </div>
+</body>
+</html>
