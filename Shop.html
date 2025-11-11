@@ -1,0 +1,365 @@
+ <!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="../src/myvibe.css">
+  <meta charset="utf-8" />
+  <title>VIBE - Collections</title>
+  <script type="text/javascript" src="Myvs.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    /* Small styles for the Back-to-Top feature */
+    .back-to-top {
+      position: fixed;
+      right: 20px;
+      bottom: 24px;
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: rgba(87,75,144,0.92);
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.28);
+      cursor: pointer;
+      z-index: 120;
+      opacity: 0;
+      transform: translateY(8px);
+      transition: opacity 180ms ease, transform 180ms ease;
+      border: none;
+    }
+    .back-to-top.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .back-to-top:focus {
+      outline: 2px solid rgba(249,202,36,0.6);
+      outline-offset: 2px;
+    }
+
+    /* small helper for the tiny hint */
+    .back-to-top .hint {
+      position: absolute;
+      bottom: 54px;
+      right: 0;
+      background: rgba(0,0,0,0.7);
+      color: #fff;
+      font-size: 12px;
+      padding: 6px 8px;
+      border-radius: 6px;
+      white-space: nowrap;
+      transform-origin: right bottom;
+      opacity: 0;
+      transition: opacity 150ms ease;
+      pointer-events: none;
+    }
+    .back-to-top:hover .hint { opacity: 1; }
+
+    /* keep existing page responsive behavior */
+    @media (max-width: 700px) {
+      .back-to-top { right: 12px; bottom: 18px; width: 40px; height: 40px; }
+    }
+  </style>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar" role="navigation" aria-label="Main">
+    <!-- keep the brand-logo element unchanged and exactly as it was before -->
+    <div style="display:flex; align-items:center; gap:1.25rem;">
+      <div class="brand-logo">VIBE</div>
+
+      <!-- Casual / Sport / Classic moved to the left side (next to the logo) -->
+      <div class="nav-left" aria-label="Collections navigation">
+        <a href="#casual">Casual</a>
+        <a href="#sport">Sport</a>
+        <a href="#classic">Classic</a>
+      </div>
+    </div>
+
+    <!-- Home / Product / About us / Contact on the right side -->
+    <div class="nav-right" aria-label="Main navigation">
+      <a href="home.HTML">Home</a>
+      <a href="Shop.html">Shop</a>
+      <a href="About us.html">About us</a>
+      <a href="Contact us.html">Contact</a>
+    </div>
+  </nav>
+
+  <header class="hero" role="banner">
+    <div class="hero-text">
+      <h1 class="hero-title">Shop the Collections</h1>
+      <p class="hero-subtitle">Explore hand-picked pieces across Casual, Sport, and Classic fits — made for every mood and moment. Tap a collection to jump right in.</p>
+      <a class="cta-btn" href="#casual">Browse Casual</a>
+    </div>
+    <div class="hero-preview" aria-hidden="true">
+      <!-- reliable hosted preview -->
+      <img src="https://gusset.com/cdn/shop/files/Relax-Fit-Dark-Stone-Front_e8094ba5-5cbb-4ea6-b737-d50bbba67740.jpg?v=1696424062&width=533" alt="VIBE collections preview" loading="lazy">
+    </div>
+  </header>
+
+  <!-- Casual Section -->
+  <section id="casual" class="section" aria-labelledby="casual-heading">
+    <div class="section-head">
+      <div>
+        <div id="casual-heading" class="section-title">Casual</div>
+        <div class="section-desc">Laidback layers and everyday staples — comfy fits with an elevated edge.</div>
+      </div>
+      <div class="badge" aria-hidden="true">Everyday</div>
+    </div>
+
+    <div class="product-grid" role="list">
+      <article class="product-card" role="listitem">
+        <div class="product-media">
+          <img src="https://www.ttmlifestyle.com/cdn/shop/products/IMG_9453_900x.heic?v=1663600711" alt="Relaxed tee" loading="lazy">
+        </div>
+        <div class="product-meta">
+          <div class="product-title">Relaxed Logo Tee</div>
+          <div class="product-price">$28</div>
+        </div>
+        <div class="product-desc">Soft cotton tee with a subtle VIBE logo — perfect for everyday wear.</div>
+        <div class="card-actions">
+          
+        </div>
+      </article>
+
+      <article class="product-card" role="listitem">
+        <div class="product-media">
+          <img src="https://bhsrounduponline.org/wp-content/uploads/2018/11/15C56BC5-DC17-4BC2-9719-24B39D95D60E-900x600.jpg" alt="Denim jacket" loading="lazy">
+        </div>
+        <div class="product-meta">
+          <div class="product-title">Oversized Denim Jacket</div>
+          <div class="product-price">$79</div>
+        </div>
+        <div class="product-desc">A roomy cut and vintage wash give this jacket a timeless, easygoing vibe.</div>
+        <div class="card-actions">
+           
+        </div>
+      </article>
+
+      <article class="product-card" role="listitem">
+        <div class="product-media">
+          <img src="https://o.osimg.net/images/product/OLV-ITS-Tier-D/OLV-ITS-Tier-D_3_Full.jpg" alt="Casual joggers" loading="lazy">
+        </div>
+        <div class="product-meta">
+          <div class="product-title">Cozy Joggers</div>
+          <div class="product-price">$49</div>
+        </div>
+        <div class="product-desc">Soft brushed fabric and a tapered silhouette for relaxed movement.</div>
+        <div class="card-actions">
+           
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Sport Section -->
+  <section id="sport" class="section" aria-labelledby="sport-heading" style="background: linear-gradient(180deg,#fff,#fbfbfd);">
+    <div class="section-head">
+      <div>
+        <div id="sport-heading" class="section-title">Sport</div>
+        <div class="section-desc">Performance-ready gear that looks as good off the court as it feels on it.</div>
+      </div>
+      <div class="badge" aria-hidden="true">Active</div>
+    </div>
+
+    <div class="product-grid" role="list">
+      <article class="product-card" role="listitem">
+        <div class="product-media">
+          <img src="https://staythecourseind.com/cdn/shop/files/Align_Performance_Pullover_Hoodie_front.jpg?v=1738277011&width=900" alt="Performance hoodie" loading="lazy">
+        </div>
+        <div class="product-meta">
+          <div class="product-title">Performance Hoodie</div>
+          <div class="product-price">$64</div>
+        </div>
+        <div class="product-desc">Breathable, quick-dry fabric with a tapered fit for on-the-move comfort.</div>
+        <div class="card-actions">
+           
+        </div>
+      </article>
+
+      <article class="product-card" role="listitem">
+        <div class="product-media">
+          <img src="https://activefaithsports.com/cdn/shop/products/gnz05664_900x.jpg?v=1655758478" alt="Training shorts" loading="lazy">
+        </div>
+        <div class="product-meta">
+          <div class="product-title">Aero Training Shorts</div>
+          <div class="product-price">$36</div>
+        </div>
+        <div class="product-desc">Lightweight with mesh panels for ventilation — move freely and stay cool.</div>
+        <div class="card-actions">
+           
+        </div>
+      </article>
+
+      <article class="product-card" role="listitem">
+        <div class="product-media">
+          <img src="https://sneakernews.com/wp-content/uploads/2014/03/reebok-classic-npc-court-2014-02.jpg" alt="Sneakers" loading="lazy">
+        </div>
+        <div class="product-meta">
+          <div class="product-title">Court Sneakers</div>
+          <div class="product-price">$98</div>
+        </div>
+        <div class="product-desc">High-traction sole and cushioned midsole for fast moves and all-day wear.</div>
+        <div class="card-actions">
+          
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Classic Section -->
+  <section id="classic" class="section" aria-labelledby="classic-heading">
+    <div class="section-head">
+      <div>
+        <div id="classic-heading" class="section-title">Classic</div>
+        <div class="section-desc">Timeless silhouettes and refined details — signature pieces that last.</div>
+      </div>
+      <div class="badge" aria-hidden="true">Refined</div>
+    </div>
+
+    <div class="product-grid" role="list">
+      <article class="product-card" role="listitem">
+        <div class="product-media">
+          <img src="https://forzacavallo.com/cdn/shop/products/20210129ForzaCavallo-15_900x.png?v=1614698013" alt="Classic button-up" loading="lazy">
+        </div>
+        <div class="product-meta">
+          <div class="product-title">Slim Button-Up</div>
+          <div class="product-price">$54</div>
+        </div>
+        <div class="product-desc">Clean lines and premium cotton — pair it with denim or chinos.</div>
+        <div class="card-actions">
+           
+        </div>
+      </article>
+
+      <article class="product-card" role="listitem">
+        <div class="product-media">
+          <img src="https://d3aefbmawe1c9c.cloudfront.net/wp-content/uploads/2021/06/homepage-banner-nicco-chinos-1013x800.jpg" alt="Tailored Chinos (seeded placeholder)" loading="lazy">
+        </div>
+        <div class="product-meta">
+          <div class="product-title">Tailored Chinos</div>
+          <div class="product-price">$62</div>
+        </div>
+        <div class="product-desc">A modern tapered fit and structured fabric for polished everyday looks.</div>
+        <div class="card-actions">
+           
+        </div>
+      </article>
+
+      <article class="product-card" role="listitem">
+        <div class="product-media">
+          <img src="https://ilgergo.com/cdn/shop/articles/1bc7511bb9f104b15aff7392804c9d59.jpg?v=1744701631" alt="Leather loafer" loading="lazy">
+        </div>
+        <div class="product-meta">
+          <div class="product-title">Leather Loafers</div>
+          <div class="product-price">$119</div>
+        </div>
+        <div class="product-desc">Hand-finished details and a minimal aesthetic for timeless wear.</div>
+        <div class="card-actions">
+           
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <footer class="footer" role="contentinfo">
+    &copy; 2025 VIBE Youth Brand  
+     
+  </footer>
+
+  <!-- Back-to-Top button -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top">
+    ↑
+    <span class="hint" aria-hidden="true">Back to top</span>
+  </button>
+
+  <script>
+    // Small JS feature: Back-to-Top button with smooth reveal and smooth scroll
+    (function () {
+      const btn = document.getElementById('backToTop');
+      if (!btn) return;
+
+      const showAfter = 300; // px scrolled before showing button
+      const scrollOptions = { behavior: 'smooth' };
+
+      // show/hide based on scroll position
+      function checkScroll() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        if (scrollTop > showAfter) {
+          btn.classList.add('visible');
+        } else {
+          btn.classList.remove('visible');
+        }
+      }
+
+      // scroll to top handler
+      function toTop(e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        btn.blur();
+      }
+
+      // keyboard shortcut: press "t" to jump to top (only when not typing)
+      function onKey(e) {
+        const active = document.activeElement;
+        const isTyping = active && (
+          active.tagName === 'INPUT' ||
+          active.tagName === 'TEXTAREA' ||
+          active.isContentEditable
+        );
+        if (isTyping) return;
+        if (e.key === 't' || e.key === 'T') {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      }
+
+      // attach listeners
+      window.addEventListener('scroll', checkScroll, { passive: true });
+      btn.addEventListener('click', toTop);
+      window.addEventListener('keydown', onKey);
+
+      // initial run
+      checkScroll();
+
+      // cleanup if needed when navigating single-page apps (not required here, but listed)
+      // return a function to remove listeners (if caller wants)
+      window.__vibeBackToTopCleanup = () => {
+        window.removeEventListener('scroll', checkScroll);
+        btn.removeEventListener('click', toTop);
+        window.removeEventListener('keydown', onKey);
+      };
+    })();
+  </script>
+
+  <script>
+    // Keep a small error-handler as a safety net for remote images.
+    (function() {
+      document.querySelectorAll('img').forEach((img, idx) => {
+        img.addEventListener('error', function() {
+          if (this.dataset.fallbacked) return;
+          this.dataset.fallbacked = '1';
+          const fallback = 'https://picsum.photos/seed/fallback-' + idx + '/900/600';
+          this.src = fallback;
+          this.alt = (this.alt || 'Image') + ' (fallback)';
+        });
+        if (img.complete && img.naturalWidth === 0) {
+          img.dispatchEvent(new Event('error'));
+        }
+      });
+
+      // Smooth scroll
+      document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', function(e) {
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

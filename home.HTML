@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>VIBE - Youth Brand</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --color-primary: #574b90;
+      --color-accent: #f9ca24;
+      --color-bg: #ffffff;
+      --color-text: #333333;
+      --font-main: 'Montserrat', Arial, sans-serif;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: var(--font-main);
+      background: var(--color-bg);
+      color: var(--color-text);
+    }
+    .navbar {
+      background: var(--color-primary);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.5rem 3rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+    }
+    .brand-logo {
+      font-weight: 800;
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 2em;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover {
+      color: var(--color-accent);
+    }
+    .hero {
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5rem 3rem 0 3rem;
+      background: linear-gradient(90deg, Gray, #fff 100%);
+    }
+    .hero-text {
+      max-width: 650px;
+    }
+    .hero-title {
+      font-size: 4rem;
+      font-weight: 900;
+      line-height: 1.1;
+      color: var(--color-primary);
+      margin-bottom: 1rem;
+      letter-spacing: 1.5px;
+    }
+    .hero-subtitle {
+      font-size: 1.5rem;
+      margin-bottom: 2.5rem;
+      color: var(--color-text);
+      max-width: 400px;
+    }
+    .cta-btn {
+      display: inline-block;
+      padding: 1em 2.2em;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border-radius: 40px;
+      background: var(--color-primary);
+      color: #fff;
+      border: none;
+      text-decoration: none;
+      box-shadow: 0 6px 24px rgba(87, 75, 144, 0.07);
+      transition: background 0.2s;
+    }
+    .cta-btn:hover {
+      background: var(--color-accent);
+      color: var(--color-primary);
+    }
+    .hero-image img {
+      width: 400px;
+      max-width: 100%;
+      border-radius: 32px;
+      box-shadow: 0 8px 32px rgba(249, 202, 36, 0.12);
+    }
+    .features {
+      padding: 4rem 3rem 6rem 3rem;
+      display: flex;
+      gap: 3rem;
+      background: #f6f6f6;
+    }
+    .feature-card {
+      flex: 1;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(87, 75, 144, 0.05);
+      padding: 2rem;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .feature-card:hover {
+      transform: translateY(-6px) scale(1.03);
+    }
+    .feature-icon {
+      font-size: 3rem;
+      color: var(--color-primary);
+      margin-bottom: 0.8rem;
+    }
+    .feature-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 0.6rem;
+    }
+    .feature-desc {
+      color: #444;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+    .footer {
+      background: var(--color-primary);
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 1rem;
+      letter-spacing: 1px;
+    }
+    @media (max-width: 900px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 3rem 1rem 0 1rem;
+      }
+      .hero-image {
+        margin-top: 2rem;
+      }
+      .features {
+        flex-direction: column;
+        padding: 2rem 1rem 3rem 1rem;
+      }
+    }
+  </style>
+  <!-- For icons, you can use FontAwesome CDN or SVGs -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800;900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="brand-logo">VIBE</div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+  </nav>
+  <section class="hero">
+    <div class="hero-text">
+      <div class="hero-title">Unleash Your Style</div>
+      <div class="hero-subtitle">Bold apparel for the creative, energetic, and ambitious youth. Step up, stand out, and show the world your true colors.</div>
+      <a class="cta-btn" href="#">Explore Now</a>
+    </div>
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=600&q=80" alt="Youth fashion">
+    </div>
+  </section>
+  <section class="features">
+    <div class="feature-card">
+      <div class="feature-icon"><i class="fas fa-fire"></i></div>
+      <div class="feature-title">Trend-Setting Designs</div>
+      <div class="feature-desc">Fresh, bold, and expressive pieces crafted to inspire confidence and creativity in every step.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+      <div class="feature-title">Sustainable Materials</div>
+      <div class="feature-desc">We care about the future. Our products use eco-friendly fabrics and ethical production for a better tomorrow.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon"><i class="fas fa-users"></i></div>
+      <div class="feature-title">For Every Vibe</div>
+      <div class="feature-desc">Athletic, artsy, edgy or classic – you’ll find your perfect fit in our collection. Join the movement!</div>
+    </div>
+  </section>
+  <footer class="footer">
+    &copy; 2025 VIBE Youth Brand · Join us on 
+    <a href="#" style="color: var(--color-accent); text-decoration:underline;">Instagram</a>
+    &middot;
+    <a href="#" style="color: var(--color-accent); text-decoration:underline;">TikTok</a>
+  </footer>
+</body>
+</html>
